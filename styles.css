@@ -2,6 +2,7 @@
     --clr-beasty-orange: #e14304;
     --clr-beasty-darkgrey: #42474e;
     --clr-beasty-lightgrey: #63666a;
+    --clr-beasty-white: #fff;
     --clr-beasty-black: #151415;
 
     --clr-civ-byz-emblem: #bcbc91;
@@ -56,28 +57,38 @@ nav a {
 
 nav button {
     padding: 0.25rem 1rem;
-    background-color: darkslategrey;
-    border: 2px solid lightgoldenrodyellow;
+    background-color: var(--clr-beasty-darkgrey);
+    border: 2px solid var(--clr-beasty-white);
     border-radius: 1rem;
 }
 
+#headLogo {
+    background-color: var(--clr-beasty-darkgrey);
+}
+
 nav button:hover, 
-nav a:hover {
+nav a:hover,
+#headLogo:hover {
     color: #000;
-    background-color: hsl(115, 93%, 59%);
+    background-color: var(--clr-beasty-orange);
 }
 
 
 /* header and footer defaults */
 
-header, footer {
-    background-color: darkslategrey;
-    color: lightgoldenrodyellow;
+header {
+    background-color: var(--clr-beasty-black);
     padding: 0.25em 4em;
 }
 
 
 /* attribution */
+footer {
+    background-color: darkslategrey;
+    color: lightgoldenrodyellow;
+    padding: 0.25em 4em;
+}
+
 .attribution { 
     display: flex;
     justify-content: center;
