@@ -1,3 +1,23 @@
+:root {
+    --clr-beasty-orange: #e14304;
+    --clr-beasty-darkgrey: #42474e;
+    --clr-beasty-lightgrey: #63666a;
+    --clr-beasty-black: #151415;
+
+    --clr-civ-byz-emblem: #bcbc91;
+    --clr-civ-byz-bg: #482569;
+    --clr-civ-ootd-emblem: #242112;
+    --clr-civ-ootd-bg: #eccd1e;
+    --clr-civ-ayy-emblem: #681b1f;
+    --clr-civ-ayy-bg: #e9d02f;
+    --clr-civ-jda-emblem: #e6c20a;
+    --clr-civ-jda-bg: #dbe3f3;
+    --clr-civ-zxl-emblem: #ced5e2;
+    --clr-civ-zxl-bg: #258587;
+    --clr-civ-jap-emblem: #c29b16;
+    --clr-civ-jap-bg: #e4e5e5;
+}
+
 * {
     font: inherit;
     font-family: Arial, Helvetica, sans-serif;
