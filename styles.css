@@ -24,9 +24,10 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     text-align: center;
+    box-sizing: border-box;
 
     /* border: 1px solid red; */
 }
@@ -74,6 +75,65 @@ nav a:hover,
 }
 
 
+
+/* Beasty Landing Page Content */
+
+main {
+    background-color: var(--clr-beasty-black);
+}
+
+#contentWrapper {
+    height: 90dvh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "banner banner banner"
+        "civ1 civ1 content1"
+        "content2 civ2 civ2";
+    gap: 1.5em;
+    margin: 1.5em;
+    background-color: var(--clr-beasty-darkgrey);
+}
+
+
+
+.gridContent {
+    border-radius: 2em;
+    background-color: #c29b16;
+    padding: 1.5em;
+}
+
+.beastyBanner {
+    grid-area: banner;
+}
+
+.civImages1 {
+    grid-area: civ1;
+}
+
+.civImages2 {
+    grid-area: civ2;
+}
+
+.civImages1 img,
+.civImages2 img {
+    width: 100%;
+
+}
+
+.beastyContent1 {
+    grid-area: content1;
+
+}
+
+.beastyContent2 {
+    grid-area: content2;
+}
+
+
+
+
 /* header and footer defaults */
 
 header {
@@ -87,6 +147,10 @@ footer {
     background-color: darkslategrey;
     color: lightgoldenrodyellow;
     padding: 0.25em 4em;
+    position: fixed;
+    width: 100dvw;
+    bottom: 0;
+    left: 0;
 }
 
 .attribution { 
