@@ -72,6 +72,10 @@ nav a:hover,
 #headLogo:hover {
     color: #000;
     background-color: var(--clr-beasty-orange);
+    box-shadow: 
+    0 0 8px var(--clr-beasty-darkgrey),
+    0 0 16px var(--clr-beasty-orange),
+    0 0 40px var(--clr-beasty-orange);
 }
 
 
@@ -83,25 +87,34 @@ main {
 }
 
 #contentWrapper {
-    height: 90dvh;
+    /* height: 90dvh; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
     grid-template-areas: 
         "banner banner banner"
         "civ1 civ1 content1"
         "content2 civ2 civ2";
-    gap: 1.5em;
-    margin: 1.5em;
-    background-color: var(--clr-beasty-darkgrey);
+    gap: 2.5em;
+    padding: 2.5em 1.5em 5em;
+    /* background-color: var(--clr-beasty-darkgrey); */
 }
 
 
 
 .gridContent {
-    border-radius: 2em;
-    background-color: #c29b16;
-    padding: 1.5em;
+    border-radius: 16px;
+    box-shadow: 
+    0 0 8px var(--clr-beasty-black),
+    0 0 16px var(--clr-beasty-darkgrey),
+    0 0 24px var(--clr-beasty-black);
+}
+
+.gridContent:hover {
+    box-shadow: 
+    0 0 12px var(--clr-beasty-black),
+    0 0 24px var(--clr-beasty-orange),
+    0 0 40px var(--clr-beasty-orange);
 }
 
 .beastyBanner {
@@ -117,9 +130,10 @@ main {
 }
 
 .civImages1 img,
-.civImages2 img {
+.civImages2 img,
+.beastyBanner img {
     width: 100%;
-
+    border-radius: 16px;
 }
 
 .beastyContent1 {
@@ -131,6 +145,12 @@ main {
     grid-area: content2;
 }
 
+.beastyContent1,
+.beastyContent2 {
+    background-color: var(--clr-beasty-orange);
+    border-radius: 2em;
+    padding: 1em;
+}
 
 
 
