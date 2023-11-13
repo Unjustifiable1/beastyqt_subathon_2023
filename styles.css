@@ -2,8 +2,11 @@
     --clr-beasty-orange: #e14304;
     --clr-beasty-darkgrey: #42474e;
     --clr-beasty-lightgrey: #63666a;
-    --clr-beasty-white: #fff;
+    --clr-beasty-white: #eee;
     --clr-beasty-black: #151415;
+
+
+    --clr-beasty-lightorange: #f7cab8;
 
     --clr-civ-byz-emblem: #bcbc91;
     --clr-civ-byz-bg: #482569;
@@ -87,6 +90,10 @@ main {
     padding: 2.5em 4em;
 }
 
+main * {
+    text-align: left;
+}
+
 #contentWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -116,6 +123,7 @@ main {
 
 .beastyBanner {
     grid-area: banner;
+    margin-bottom: 2em;
 }
 
 .civImages1 {
@@ -153,6 +161,113 @@ main {
 
 .beastyContent2 {
     grid-area: content2;
+}
+
+
+/* SUB GOALS PAGE */
+
+/* GRID GOALS LISTS */
+
+.subGoalsSection {
+    display: grid;
+    gap: 2em;
+    margin-bottom: 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "goals1 goals2"
+        "goals1 amount";
+}
+
+.goals1 { grid-area: goals1;}
+
+.goals2 { grid-area: goals2;}
+
+.subAmounts { grid-area: amount;}
+
+
+.goalsList {
+    background-color: var(--clr-beasty-lightorange);
+    padding: 1em 2em;
+    border-radius: 1em;
+    border: 2px solid var(--clr-beasty-orange);
+}
+
+
+
+
+/* CHECKLIST STYLING*/
+
+.goalsList ul {
+    list-style-type: none;
+}
+
+/* The container */
+.checkContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 0.8em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* Hide the browser's default checkbox */
+.checkContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkContainer:hover input ~ .checkmark {
+    background-color: #aaa;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkContainer input:checked ~ .checkmark {
+    background-color: var(--clr-beasty-orange); /* #2196F3; */
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkContainer .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 

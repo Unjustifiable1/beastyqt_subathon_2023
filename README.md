@@ -17,5 +17,13 @@ BeastyQT logos and images
 AoE4 World - The Sultans Ascend - 6 new civilizations images
 > from https://aoe4world.com/
 
-Subathon official list
-> https://imgur.com/GP9QbL2
+Subathon Goals list
+50 subs = 80 Bunti song
+100 subs = DLC Giveaway #1
+150 subs = Shave half beard
+200 subs = Spin the Wheel Rewards
+250 subs = How to play new ladder maps guide/best civs
+300 subs = DLC Giveaway #2
+350 subs = Analyze in depth one of my games
+
+
