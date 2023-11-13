@@ -84,23 +84,20 @@ nav a:hover,
 
 main {
     background-color: var(--clr-beasty-black);
+    padding: 2.5em 4em;
 }
 
 #contentWrapper {
-    /* height: 90dvh; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas: 
         "banner banner banner"
         "civ1 civ1 content1"
         "content2 civ2 civ2";
     gap: 2.5em;
-    padding: 2.5em 1.5em 5em;
-    /* background-color: var(--clr-beasty-darkgrey); */
+    padding-bottom: 2.5em;
 }
-
-
 
 .gridContent {
     border-radius: 16px;
@@ -136,21 +133,28 @@ main {
     border-radius: 16px;
 }
 
-.beastyContent1 {
-    grid-area: content1;
-
-}
-
-.beastyContent2 {
-    grid-area: content2;
-}
-
 .beastyContent1,
 .beastyContent2 {
     background-color: var(--clr-beasty-orange);
     border-radius: 2em;
     padding: 1em;
 }
+
+.beastyContent1 {
+    grid-area: content1;
+
+}
+
+.content1wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.beastyContent2 {
+    grid-area: content2;
+}
+
 
 
 
